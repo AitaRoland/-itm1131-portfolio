@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal profile page demonstrating semantic HTML, tables, images, and links.">
+    <title>Aita Roland - Personal Profile</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>Welcome to my personal profile page.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="#about">About Me</a> |
+            <a href="#course-modules">Course Modules</a> |
+            <a href="#media">Media</a> |
+            <a href="#links">Links</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Aita Roland. I am a student of muni university interested in
+                computers, information technology, and web development. I enjoy
+                learning new skills and using technology to solve problems.
+            </p>
+            <p>
+                One of my goals is to develop strong skills in information technology
+                and programming and become confident in creating useful digital solutions.
+            </p>
+        </section>
+
+        <section id="course-modules">
+            <h2>My Favourite Course Modules</h2>
+            <table>
+                <caption>Three course modules I enjoy and why</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Course Module</th>
+                        <th scope="col">Why I Like It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>I enjoy creating web pages and learning how HTML structures information on the internet.</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td>It helps me understand how computers communicate and how the internet works.</td>
+                    </tr>
+                    <tr>
+                        <td>Programming</td>
+                        <td>I like solving problems with code and learning how software is built.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="media">
+            <h2>Images and Media</h2>
+
+            <figure>
+                <img
+                    src="technology_entrepreneurship.jpg"
+                    alt="Technology Entrepreneurship Seed Program poster advertising support of up to 2,000 dollars and listing technology innovation areas.this allows students to invent and innovate on their IT skills"
+                    width="700"
+                >
+                <figcaption>Technology Entrepreneurship Seed Program 1.0 poster.</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="freshers_interfaculty_games.jpg"
+                    alt="Muni University Freshers Interfaculty Games poster showing football, netball, volleyball, badminton, pool table, scrabble, and woodball.it mattered because the sports allow students to freshen and get their minds free to avoid mental health concerns."
+                    width="700" 
+                >
+                <figcaption>Muni University Freshers Interfaculty Games poster.</figcaption>
+            </figure>
+        </section>
+
+        <section id="links">
+            <h2>Useful Links</h2>
+            <p>
+                <a href="#course-modules">
+                    Jump to my favourite course modules
+                </a>
+                — an internal link to another section on this page.
+            </p>
+            <p>
+                <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">
+                    W3C Markup Validation Service
+                </a>
+                — an external link for checking whether HTML is valid.
+            </p>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aita Roland. Personal Profile.</p>
+    </footer>
+</body>
+</html>
