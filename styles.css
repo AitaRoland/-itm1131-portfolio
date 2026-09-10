@@ -1,0 +1,200 @@
+/* Modern layout styling for the profile page */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f4f7f9;
+    color: #222;
+}
+
+header {
+    background: #0f6f8f;
+    color: white;
+    padding: 2rem 5%;
+}
+
+header h1 {
+    margin: 0 0 0.4rem;
+}
+
+header p {
+    margin: 0 0 1rem;
+}
+
+/* 1. FLEXBOX NAVIGATION
+   The parent nav uses display:flex and space-between. */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.45rem 0.65rem;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: 2rem auto;
+}
+
+.card {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #0f6f8f;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background: #e8f2f6;
+}
+
+/* Images */
+figure {
+    margin: 1.5rem 0;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* 2. CSS GRID GALLERY
+   Three equal columns on normal desktop widths. */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.gallery-item {
+    padding: 1.25rem;
+    border: 1px solid #d5e0e5;
+    border-radius: 8px;
+    background: #f8fbfc;
+}
+
+.gallery-item h3 {
+    margin-top: 0;
+    color: #0f6f8f;
+}
+
+/* Contact form */
+form p {
+    margin-bottom: 1rem;
+}
+
+input,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 650px;
+    padding: 0.65rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.65rem 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    background: #0f6f8f;
+    color: white;
+    cursor: pointer;
+}
+
+/* 3. RESPONSIVE CHECK
+   The layout changes at narrower browser widths. */
+@media (max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #123b4a;
+    color: white;
+}
